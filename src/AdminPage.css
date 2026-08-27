@@ -1,0 +1,248 @@
+.admin-login {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  padding: 20px;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+.login-caja {
+  width: 100%;
+  max-width: 360px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 34px 26px;
+  box-shadow: 0 10px 30px rgba(107, 47, 94, 0.08);
+}
+
+.login-caja h1 {
+  text-align: center;
+  margin: 0 0 24px;
+  color: var(--ink);
+  font-size: 24px;
+}
+
+.login-caja .campo {
+  margin-bottom: 14px;
+}
+
+.login-caja label {
+  display: block;
+  font-size: 12.5px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: var(--ink);
+}
+
+.login-caja input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  font-size: 15px;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+.login-caja input:focus {
+  outline: none;
+  border-color: var(--brand);
+}
+
+.btn-entrar {
+  width: 100%;
+  padding: 15px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 14px;
+  background: linear-gradient(135deg, var(--brand-dark), var(--ink));
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-entrar:disabled {
+  background: #D8CBD3;
+}
+
+.error {
+  color: #A23B2E;
+  background: #FCEBE8;
+  border: 1px solid #F0C4BC;
+  padding: 9px 11px;
+  border-radius: 10px;
+  font-size: 13px;
+  margin: 8px 0;
+}
+
+/* ---- Panel principal ---- */
+.admin-page {
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Poppins', Arial, sans-serif;
+  padding: 22px 20px 60px;
+}
+
+.admin-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.admin-header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.btn-salir {
+  background: transparent;
+  border: 1px solid var(--brand-dark);
+  color: var(--brand-dark);
+  padding: 8px 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.panel .bloque {
+  margin-bottom: 30px;
+}
+
+.panel h2 {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--brand-dark);
+  margin-bottom: 14px;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+.input-fecha {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  font-size: 15px;
+  margin-bottom: 14px;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+.cargando {
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.lista-horarios {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.fila-horario {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--card);
+}
+
+.info-horario {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.info-horario .hora {
+  font-weight: 700;
+}
+
+.info-horario .etiqueta {
+  font-size: 12.5px;
+  color: var(--text-muted);
+}
+
+.fila-horario.estado-libre { border-left: 4px solid #4A9B5E; }
+.fila-horario.estado-reservado { border-left: 4px solid var(--brand); }
+.fila-horario.estado-bloqueado { border-left: 4px solid #A99C9C; }
+.fila-horario.estado-vacaciones { border-left: 4px solid var(--gold); }
+
+.btn-toggle {
+  padding: 8px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--brand-dark);
+  background: transparent;
+  color: var(--brand-dark);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.rango-fechas {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.rango-fechas .campo {
+  flex: 1;
+}
+
+.rango-fechas label {
+  display: block;
+  font-size: 12.5px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.rango-fechas input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  font-size: 14px;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+.botones-rango {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn-bloquear-rango {
+  padding: 14px;
+  border: none;
+  border-radius: 14px;
+  background: #A23B2E;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-desbloquear-rango {
+  padding: 14px;
+  border: 1px solid var(--brand-dark);
+  border-radius: 14px;
+  background: transparent;
+  color: var(--brand-dark);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.aviso {
+  margin-top: 12px;
+  font-size: 13.5px;
+  color: #2B7A3D;
+  background: #E8F5EA;
+  padding: 10px 12px;
+  border-radius: 10px;
+}
