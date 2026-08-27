@@ -9,7 +9,7 @@ const SERVICIOS_MUJERES = [
   { id: 'tratamiento', label: 'Tratamiento capilar', icon: '💆‍♀️' },
 ]
 
-const WHATSAPP_NUMERO = '+5493775455862'
+const WHATSAPP_NUMERO = '+5493775530323'
 
 interface Props {
   onVolver?: () => void
